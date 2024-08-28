@@ -1,0 +1,86 @@
+:root {
+  --main-brown: #b45b35;
+}
+
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+.navbr {
+  background-color: var(--main-brown) !important;
+}
+.search {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translate(0, -50%);
+}
+.cards {
+  cursor: pointer;
+  display: inline-block;
+}
+.cards img {
+  height: 400px;
+  width: 100%;
+}
+.cardd {
+  position: relative;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #6e6e6ea8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.overlay div h5 {
+  font-size: 16px;
+  font-size: larger;
+}
+.cardd:hover .overlay {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.selecter {
+  user-select: none;
+}
+
+.obj {
+  height: 400px !important;
+  width: 100%;
+}
+
+.parent-div {
+  align-items: center;
+  column-gap: 57px;
+  background: #eee;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 7px;
+  row-gap: 12px;
+}
+
+.story {
+  min-height: 150px;
+  background-color: #eee;
+  border-radius: 7px;
+  /* margin: 20px 0; */
+}
+
+.btnss {
+  background-color: var(--main-brown) !important;
+  border: 0 !important;
+}
